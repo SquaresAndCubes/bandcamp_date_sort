@@ -1,6 +1,5 @@
 //BandCamp Date Sort Script//
 
-
 //function which sorts parent noded by child nodes nested text///////////////////
 function sortUsingNestedText(parent, childSelector, keySelector, sort = "desc") {
   var items = parent.children(childSelector).sort(function(a, b) {
