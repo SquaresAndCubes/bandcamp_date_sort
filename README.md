@@ -3,7 +3,7 @@
 Chrome Extension for Sorting Shows in a Users Collection on BandCamp by Date
 
 As of right now BandCamp does not have an individual date field, or it appears really any support for dates as it seems it was just designed for albums and not live shows.
-Therefore the way they represent dates for the shows is simply a date as part of the string that represents the entire title of the show/recording in the format "yyyy.mm.dd".
+Therefore the way dates are represented on the site for live shows is simply a date as part of the string that represents the entire title of the show/recording in the format "yyyy.mm.dd".
 
 Below is the basic HTML structure that you would see on a User's Collection Page (clicking the 'heart' button) of content if they had live shows with dates in them.
 
