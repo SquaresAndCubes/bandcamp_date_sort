@@ -7,6 +7,10 @@ Therefore the way dates are represented on the site for live shows is simply a d
 
 Below is the basic HTML structure that you would see on a User's Collection Page (clicking the 'heart' button) of content if they had live shows with dates in them.
 
+The "bandcamp_date_sort" extension uses JavaScript injection to sort the parent list item nodes of the `<ol class="collection-grid">` by matching the date via Regular Expression on the text field of the Child nodes of the `<div class="collection-item-title">`.
+
+A typical use case would be to navigate to your "collection" by clicking the "heart" button on the site, then you would click the bandcamp_date_sort Chrome extension button and it would automatically click the "show all items" button on the bottom of the page for you and then automatically scroll continually to the bottom of the page until all of the items in your collection are exposed/loaded. Then the sorting algorithm runs and reorders the show objects on the page. As this project moves forward the primarily goal will be to improve upon this algorithm as it is not perfect but does do a pretty good job as of right now.
+
 ```html
 <div id="collection-items" class="collection-items">
   <ol class="collection-grid editable ui-sortable">
@@ -31,7 +35,3 @@ Below is the basic HTML structure that you would see on a User's Collection Page
   </ol>
 </div>
 ```
-
-The "bandcamp_date_sort" extension uses JavaScript injection to sort the parent list item nodes of the `<ol class="collection-grid">` by matching the date via Regular Expression on the text field of the Child nodes of the `<div class="collection-item-title">`.
-
-A typical use case would be to navigate to your "collection" by clicking the "heart" button on the site, then you would click the bandcamp_date_sort Chrome extension button and it would automatically click the "show all items" button on the bottom of the page for you and then automatically scroll continually to the bottom of the page until all of the items in your collection are exposed/loaded. Then the sorting algorithm runs and reorders the show objects on the page. As this project moves forward the primarily goal will be to improve upon this algorithm as it is not perfect but does do a pretty good job as of right now.
