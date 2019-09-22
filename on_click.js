@@ -13,11 +13,11 @@ window.setInterval(autoScroll, 100);
 
 //waits 8 seconds for scrolling to complete and then sorts shows//
 setTimeout(function timer() {
-  sortUsingNestedText($('.collection-grid'), "li", "div.collection-item-title", "desc");
-}, 8000);
+  sortUsingNestedText($('.collection-grid'), "li", "div.collection-item-title");
+}, 12000);
 
 
 //waits 10 seconds and scrolls page all the way back to the top///
 setTimeout(function timer2() {
   window.scrollTo(0, 0);
-}, 10000);
+}, 14000);
