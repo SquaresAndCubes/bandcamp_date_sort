@@ -13,8 +13,7 @@ window.setInterval(autoScroll, 100);
 
 //waits 8 seconds for scrolling to complete and then sorts shows//
 setTimeout(function timer() {
-  sortUsingNestedText($('.collection-grid'), "li",
-    '.collection-title-details .collection-item-title');
+  sortUsingNestedText($('.collection-grid'), "li", '.collection-title-details .collection-item-title');
 }, 12000);
 
 
